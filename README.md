@@ -1,22 +1,31 @@
 # Pipeline de Dados - Imóveis BH
 
+# Autor: Eduardo Cosme Pereira dos Santos
+
 ## Objetivo
 Coletar, tratar e analisar dados de imóveis para aluguel 
 em Belo Horizonte a partir do ZAP Imóveis.
+
+Site usado neste projeto: https://www.zapimoveis.com.br/
 
 ## Arquitetura do Projeto
 - Coleta → Python + Playwright (VSCode local)
 - Limpeza e Análise → Databricks Community Edition
 
 ## Estrutura de Pastas
+
 projeto/
+
 ├── notebooks/
-│   ├── 01_primeiros passos.py
+│   ├── 01_Inicio.ipynb
 │   ├── 02_coleta.py
 │   └── 03_analise.ipynb
+
 ├── data/
 │   ├── raw/
 │   └── processed/
+
+
 ├── src/
 └── README.md
 
@@ -50,4 +59,4 @@ com Python 3.11.
    playwright install chromium
 
 3. Rodar os notebooks em ordem
-   01_INICIO → 02_limpeza → 03_analise
+   01_inicio → 02_coleta → 03_analise
