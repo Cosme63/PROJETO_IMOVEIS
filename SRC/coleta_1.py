@@ -1,15 +1,20 @@
+### importar as bibliotecas necessárias
+
 import asyncio
+import json
 
 
 ## Script usado para coletar os dados do site ZAP IMOVEIS via API descoberta 
 
 from playwright.async_api import async_playwright
 
+## Função assíncrona para coletar os dados do site ZAP IMOVEIS via API descoberta
 async def coletar():
     async with async_playwright() as pw:
         navegador = await pw.chromium.launch(headless=False)
         page = await navegador.new_page()
-
+        
+        ## Função para capturar a resposta da API e extrair os dados
         async def capturar_resposta(response):
             if "v2/listings" in response.url:
                 print("✓ Endpoint capturado!")
@@ -24,3 +29,4 @@ async def coletar():
         await navegador.close()
 
 asyncio.run(coletar())
+

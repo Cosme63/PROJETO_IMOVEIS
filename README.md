@@ -60,3 +60,14 @@ com Python 3.11.
 
 3. Rodar os notebooks em ordem
    01_inicio → 02_coleta → 03_analise
+
+## Estrutura de cada script :
+
+1. inicio.ipynb - Script inicial para com as informações obtidas no acesso do site zapimoveis pelo navegador Chrome, foi gerado o arquivo API_ZAP_IMOVEIS , por ele consegui verificar qual a API onde esta os dados e sua estrutura , depois foi usado o programa insomnia para acessar os tipos de cabeçalho para ser usado no script, foi verificado que este site é protegido por Cloudflare
+
+2. coleta_01.py - Script para testar o pacote playwright ajustando as informações para acessar o site, passar pela proteção do Cloudflare e retornar a API com quantidade de  imoveis total.
+
+3. coleta_02.py  - Script com ajustado para trazer os tipos de dados  (preço, area, bairro, quartos, estrutura) dos imoveis para montar o loop que ira coletar e transformar no dataframe deste projeto 
+
+4. coleta_03.py - Script usado atraves do tipo de dados acima ,criar o loop para buscar na api e montar o dataframe
+
