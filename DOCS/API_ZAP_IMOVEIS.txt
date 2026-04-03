@@ -1,0 +1,15 @@
+curl ^"https://glue-api.zapimoveis.com.br/v2/listings?bathrooms=2^%^2C3^%^2C4^&bedrooms=3^%^2C4^&business=RENTAL^&parentId=null^&listingType=USED^&__zt=mtc^%^3Adeduplication2023^&addressCity=Belo+Horizonte^&addressZone=^&addressStreet=^&addressLocationId=BR^%^3EMinas+Gerais^%^3ENULL^%^3EBelo+Horizonte^&addressState=Minas+Gerais^&addressNeighborhood=^&addressPointLat=-19.919052^&addressPointLon=-43.938669^&addressType=city^&unitTypes=APARTMENT^%^2CAPARTMENT^%^2CAPARTMENT^%^2CHOME^%^2CHOME^%^2CHOME^%^2CHOME^%^2CAPARTMENT^%^2CAPARTMENT^%^2CAPARTMENT^%^2CALLOTMENT_LAND^%^2CFARM^%^2CBUSINESS^%^2COFFICE^%^2CHOME^%^2COFFICE^%^2CHOTEL^%^2CBUILDING^%^2CPARKING_SPACE^&unitTypesV3=APARTMENT^%^2CSTUDIO^%^2CKITNET^%^2CHOME^%^2CTWO_STORY_HOUSE^%^2CCONDOMINIUM^%^2CVILLAGE_HOUSE^%^2CPENTHOUSE^%^2CFLAT^%^2CLOFT^%^2CRESIDENTIAL_ALLOTMENT_LAND^%^2CFARM^%^2CBUSINESS^%^2COFFICE^%^2CCOMMERCIAL_PROPERTY^%^2CFLOOR^%^2CHOTEL^%^2CCOMMERCIAL_BUILDING^%^2CPARKING_SPACE^&unitSubTypes=UnitSubType_NONE^%^2CDUPLEX^%^2CTRIPLEX^%^7CSTUDIO^%^7CKITNET^%^7CUnitSubType_NONE^%^2CTWO_STORY_HOUSE^%^2CSINGLE_STOREY_HOUSE^%^2CKITNET^%^7CTWO_STORY_HOUSE^%^7CCONDOMINIUM^%^7CVILLAGE_HOUSE^%^7CPENTHOUSE^%^7CFLAT^%^7CLOFT^%^7CUnitSubType_NONE^%^2CCONDOMINIUM^%^2CVILLAGE_HOUSE^%^7CUnitSubType_NONE^%^2CCONDOMINIUM^%^7CUnitSubType_NONE^%^2CRETAIL_CENTER^%^2CGALLERY^%^2CSHOPPING^%^7CUnitSubType_NONE^%^2CCLINIC^%^2COFFICE^%^7CUnitSubType_NONE^%^7CFLOOR^%^7CUnitSubType_NONE^%^7CUnitSubType_NONE^%^7CUnitSubType_NONE^&usageTypes=RESIDENTIAL^%^2CRESIDENTIAL^%^2CRESIDENTIAL^%^2CRESIDENTIAL^%^2CRESIDENTIAL^%^2CRESIDENTIAL^%^2CRESIDENTIAL^%^2CRESIDENTIAL^%^2CRESIDENTIAL^%^2CRESIDENTIAL^%^2CRESIDENTIAL^%^2CRESIDENTIAL^%^2CCOMMERCIAL^%^2CCOMMERCIAL^%^2CCOMMERCIAL^%^2CCOMMERCIAL^%^2CCOMMERCIAL^%^2CCOMMERCIAL^%^2CCOMMERCIAL^&page=1^&size=1^&from=0^&images=webp^&categoryPage=RESULT^&includeFields=facets^%^2Csearch^%^28totalCount^%^29^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7^" ^
+  -H ^"dnt: 1^" ^
+  -H ^"origin: https://www.zapimoveis.com.br^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://www.zapimoveis.com.br/^" ^
+  -H ^"sec-ch-ua: ^\^"Chromium^\^";v=^\^"146^\^", ^\^"Not-A.Brand^\^";v=^\^"24^\^", ^\^"Google Chrome^\^";v=^\^"146^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: same-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36^" ^
+  -H ^"x-domain: .zapimoveis.com.br^"

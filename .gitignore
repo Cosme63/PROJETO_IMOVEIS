@@ -1,0 +1,22 @@
+# Ambiente virtual
+venv/
+VENV/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Dados
+data/
+
+# Logs
+logs/
+
+# Variáveis sensíveis
+.env
