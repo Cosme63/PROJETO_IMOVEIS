@@ -71,3 +71,8 @@ com Python 3.11.
 
 4. coleta_03.py - Script usado atraves do tipo de dados acima ,criar o loop para buscar na api e montar o dataframe
 
+## Limitações conhecidas
+
+A API do ZAP limita a paginação a 50 páginas por sessão, resultando em ~1.050 imóveis coletados de um total de 2.978.
+
+A amostra é representativa para fins de análise exploratória.

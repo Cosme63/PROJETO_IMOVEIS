@@ -10,9 +10,9 @@ async def coletar():
         navegador = await pw.chromium.launch(headless=False)
         page = await navegador.new_page()
 
-        # Acessa o site para autenticar com o Cloudflare
-        await page.goto('https://www.zapimoveis.com.br/aluguel/apartamentos/mg+belo-horizonte/3-quartos/')
-        await page.wait_for_timeout(5000)
+        # Acessa o site para autenticar com o Cloudflare, ajustando o timeout para 60 segundos e esperando o html  carregar
+        await page.goto('https://www.zapimoveis.com.br/aluguel/apartamentos/mg+belo-horizonte/3-quartos/',timeout=60000,wait_until='domcontentloaded')                    
+               
 
         # Primeira requisição para pegar o total de imóveis
         primeira_resposta = await page.evaluate('''async () => {
@@ -59,8 +59,8 @@ async def coletar():
                 imovel = {
                     'preco':      pricing.get('price', None),
                     'condominio': pricing.get('monthlyCondoFee', None),
-                    'area':       listing.get('totalAreas', [None])[0],
-                    'quartos':    listing.get('bedrooms', [None])[0],
+                    'area':       listing.get('totalAreas', [None])[0] if listing.get('totalAreas') else None,
+                    'quartos':    listing.get('bedrooms', [None])[0] if listing.get('bedrooms') else None,
                     'bairro':     address.get('neighborhood', None),
                     'latitude':   point.get('lat', None),
                     'longitude':  point.get('lon', None),
@@ -78,4 +78,7 @@ async def coletar():
         await navegador.close()
 
 asyncio.run(coletar())
+
+
+
 
