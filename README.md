@@ -76,3 +76,7 @@ com Python 3.11.
 A API do ZAP limita a paginação a 50 páginas por sessão, resultando em ~1.050 imóveis coletados de um total de 2.978.
 
 A amostra é representativa para fins de análise exploratória.
+
+## Pasta IMAGEM 
+
+Tem um print do dataset criado para este projeto , como por boas praticas no Github não subimos os arquivos eles serão tratatos dentro da arquiterura medalhão no Databricks 
