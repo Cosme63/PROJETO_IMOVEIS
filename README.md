@@ -22,8 +22,9 @@ projeto/
 │   └── 03_analise.ipynb
 
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   ├── bronze/ - dados obtidos pela API via Playwright
+│   └── silver/ - dados tratados 
+    |__gold/     - analise
 
 
 ├── src/
@@ -34,6 +35,7 @@ projeto/
 - Playwright
 - Pandas
 - Databricks
+- Estrutura medalhão databricks
 
 ## Aprendizados e Desafios
 ### Cloudflare

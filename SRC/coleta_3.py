@@ -64,6 +64,10 @@ async def coletar():
                     'bairro':     address.get('neighborhood', None),
                     'latitude':   point.get('lat', None),
                     'longitude':  point.get('lon', None),
+                    'tipo':      listing.get('unitTypes', [None])[0] if listing.get('unitTypes') else None,
+                    'banheiros': listing.get('bathrooms', [None])[0] if listing.get('bathrooms') else None,
+                    'vagas':     listing.get('parkingSpaces', [None])[0] if listing.get('parkingSpaces') else None,
+                    'iptu':      pricing.get('yearlyIptu', None),
                 }
                 imoveis.append(imovel)
 
@@ -72,8 +76,8 @@ async def coletar():
 
         # Converte para DataFrame e salva
         df = pd.DataFrame(imoveis)
-        df.to_csv('data/raw/zap_raw.csv', index=False, encoding='utf-8-sig')
-        print(f"Coleta finalizada! {len(df)} imóveis salvos em data/raw/zap_raw.csv")
+        df.to_csv('data/bronze/imoveis.csv', index=False, encoding='utf-8-sig')
+        print(f"Coleta finalizada! {len(df)} imóveis salvos em data/bronze/imoveis.csv")
 
         await navegador.close()
 
