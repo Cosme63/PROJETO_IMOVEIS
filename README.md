@@ -71,7 +71,7 @@ com Python 3.11.
 
 3. coleta_02.py  - Script com ajustado para trazer os tipos de dados  (preço, area, bairro, quartos, estrutura) dos imoveis para montar o loop que ira coletar e transformar no dataframe deste projeto 
 
-4. coleta_03.py - Script usado atraves do tipo de dados acima ,criar o loop para buscar na api e montar o dataframe
+4. coleta_03.py - Script usado atraves do tipo de dados acima ,criar o loop para buscar na api e montar o dataframe, foi atualizado para acrescentar outros dados  dos imoveis para um dataset mais completo  
 
 ## Limitações conhecidas
 
