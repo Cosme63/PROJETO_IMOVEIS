@@ -82,3 +82,7 @@ A amostra é representativa para fins de análise exploratória.
 ## Pasta IMAGEM 
 
 Tem um print do dataset criado para este projeto , como por boas praticas no Github não subimos os arquivos eles serão tratatos dentro da arquiterura medalhão no Databricks 
+
+## Aprendizado 
+
+Durante a busca do dados dos imoveis via script COLETA_03 foi verificado que estava faltando alguns dados importantes ( tipo de imovel , valor do IPTU, ) foi adicionado ao script.
