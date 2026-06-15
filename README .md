@@ -1,9 +1,11 @@
 # 🏠 Pipeline de Dados — Imóveis para Aluguel em BH
 
 **Autor:** Eduardo Cosme Pereira dos Santos  
+**Contatos:** https://www.linkedin.com/in/eduardocpsantos/ ; edu.cosme63@outlook.com.br
+
 **Fonte de dados:** [ZAP Imóveis](https://www.zapimoveis.com.br/)  
 **Status:** Concluido
-**Contatos:** https://www.linkedin.com/in/eduardocpsantos/ ; edu.cosme63@outlook.com.br
+
 
 ---
 
